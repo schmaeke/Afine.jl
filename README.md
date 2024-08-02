@@ -1,3 +1,3 @@
 <center>
-    <img href = "resources/logo/logo_2px_outline.png" alt = "feris logo" width = "400px">
+    <img src = "resources/logo/logo_2px_outline.png" alt = "feris logo" width = "400px">
 </center>

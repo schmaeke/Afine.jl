@@ -1,0 +1,60 @@
+\documentclass[margin = 0.5mm, varwidth]{standalone}
+
+\usepackage{cascadia-code}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+
+\definecolor{juliaRed}{HTML}{cb3c33}
+\definecolor{juliaGreen}{HTML}{389826}
+\definecolor{juliaBlue}{HTML}{4063d8}
+\definecolor{juliaPurple}{HTML}{9558b2}
+\definecolor{foreground}{RGB}{255, 255, 255}
+\definecolor{background}{RGB}{0, 0, 0}
+
+\def\lineWidth{0.5}
+\def\shadowOpacity{0.3}
+
+\usetikzlibrary{perspective}
+
+\begin{document}
+	\pagecolor{white}%
+	\begin{tikzpicture}[isometric view, rounded corners = 1e-2]%
+		\begin{scope}[canvas is xy plane at z = -1.2]%
+			\fill[black!20!white] (0, 0) rectangle (1, 1);
+		\end{scope}%
+		\begin{scope}[canvas is xy plane at z = 0]%
+			\fill[juliaPurple] (0, 0) rectangle (1, 1);
+			\fill[juliaGreen] (0, 0) rectangle (1, 0.5);
+			\fill[white, opacity = 0.2] (0, 0) rectangle (1, 1);
+			\draw[background, line width = \lineWidth] (0, 0) rectangle (1, 1);
+			\draw[background, line width = \lineWidth] (0, 0.5) -- ++(1, 0);
+			\draw[background, line width = \lineWidth] (0.5, 0.5) -- ++(0, -0.5);
+		\end{scope}%
+		\begin{scope}[canvas is yz plane at x = 0]%
+			\fill[juliaPurple] (0, 0) rectangle (1, -1);
+			\fill[juliaGreen] (0, 0) rectangle (0.5, -0.5);
+			\fill[juliaRed] (0, -0.5) rectangle ++(0.5, -0.5);
+			\draw[background, line width = \lineWidth] (0, 0) rectangle (1, -1);
+			\draw[background, line width = \lineWidth] (0.5, 0) -- ++(0, -1);
+			\draw[background, line width = \lineWidth] (0.5, -0.5) -- ++(-0.5, 0);
+		\end{scope}%
+		\begin{scope}[canvas is xz plane at y = 0]%
+			\fill[juliaPurple] (0, 0) rectangle (1, -1);
+			\fill[juliaGreen] (0, 0) rectangle (1, -0.5);
+			\fill[juliaRed] (0, -0.5) rectangle ++(1, -0.5);
+			\fill[black, opacity = 0.2] (0, 0) rectangle (1, -1);
+			\draw[background, line width = \lineWidth] (0, 0) rectangle (1, -1);
+			\draw[background, line width = \lineWidth] (0, -0.5) -- ++(1, 0);
+			\draw[background, line width = \lineWidth] (0.5, -0.5) -- ++(0, 0.5);
+			\node[right, shift = {(0, -0.1)}] at (1, -0.5) {%
+				{%
+					\Huge\texttt{feris}% finite element research implementation software
+				}\textsubscript{%
+					\color{juliaBlue}\small\texttt{jl}%
+				}%
+			};
+		\end{scope}%
+	\end{tikzpicture}%
+\end{document}
