@@ -5,7 +5,7 @@
 ---
 
 > [!WARNING]
-> This package is in a very early stage and only intended for research purposes. It should not be used production at this time!
+> This package is in a very early stage and only intended for research purposes. It should not be used in production at this time!
 
 ---
 
