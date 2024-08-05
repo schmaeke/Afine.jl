@@ -2,8 +2,12 @@
     <img src = "resources/logo/logo.png" alt = "feris logo" width = "400px">
 </p>
 
+---
+
 > [!WARNING]
-> This package is in a very early stage and not ready for production use!
+> This package is in a very early stage and only intended for research purposes. It should not be used production at this time!
+
+---
 
 |                                                                                 **Continuous integration**                                                                                |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
