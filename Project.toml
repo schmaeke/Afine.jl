@@ -1,0 +1,13 @@
+name = "Feris"
+uuid = "cb8e79d7-79bf-49f4-ad4e-adfa09c7d2bb"
+authors = [ "Jan Niklas Schmäke" ]
+version = "0.0.1-DEV"
+
+[compat]
+julia = "1.10.4"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = [ "Test" ]

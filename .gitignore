@@ -1,0 +1,6 @@
+# Manifest file generated from PkgTemplates
+/Manifest.toml
+
+# Files generated from the TeX compiler
+*.aux
+*.log
