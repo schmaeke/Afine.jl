@@ -1,6 +1,9 @@
 # Manifest file generated from PkgTemplates
 /Manifest.toml
 
+# macOS file system files
+.DS_Store
+
 # Files generated from the TeX compiler
 *.aux
 *.log
