@@ -2,7 +2,6 @@
 
 \usepackage{cascadia-code}
 \usepackage[T1]{fontenc}
-\usepackage{contour}
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
@@ -15,9 +14,6 @@
 \definecolor{background}{RGB}{0, 0, 0}
 
 \def\lineWidth{0.5}
-
-\contourlength{0.5pt}
-\contournumber{50}
 
 \usetikzlibrary{perspective}
 
@@ -52,11 +48,11 @@
 			\draw[background, line width = \lineWidth] (0, -0.5) -- ++(1, 0);
 			\draw[background, line width = \lineWidth] (0.5, -0.5) -- ++(0, 0.5);
 			\node[black, right, shift = {(0, -0.1)}] at (1, -0.5) {%
-				{
+				{%
 					\Huge\texttt{Feris}%
 				}\textsubscript{%
 					\color{juliaBlue}\small\texttt{jl}%
-				}
+				}%
 			};
 		\end{scope}%
 	\end{tikzpicture}%
