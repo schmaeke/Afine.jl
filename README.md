@@ -1,5 +1,5 @@
 <p align = "center">
-    <img src = "resources/logo/logo.png" alt = "feris logo" width = "400px">
+    <img src = "resources/logo/logo.svg" alt = "feris logo" width = "400px">
 </p>
 
 ---
