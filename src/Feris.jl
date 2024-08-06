@@ -1,6 +1,6 @@
 module Feris
 
-include( "Cells/Cells.jl" )
+include( "Geometries/Geometries.jl" )
 include( "Quadrature/Quadrature.jl" )
 
-end
+end # module
