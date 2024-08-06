@@ -2,6 +2,6 @@ module FerisRunTests
 
 using Test
 
-@time @testset "Cells" begin include( "Cells/runtests.jl" ) end
+@time @testset "Geometries" begin include( "Geometries/runtests.jl" ) end
 
 end # module
