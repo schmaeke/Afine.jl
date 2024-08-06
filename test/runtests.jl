@@ -1,6 +1,7 @@
-using Feris
+module FerisRunTests
+
 using Test
 
-@testset "Feris.jl" begin
-    # Write your tests here.
-end
+@time @testset "Cells" begin include( "Cells/runtests.jl" ) end
+
+end # module
