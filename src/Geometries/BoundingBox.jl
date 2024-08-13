@@ -36,6 +36,26 @@ end # function
 
 
 """
+	split( bounding_box, number_of_splits )
+
+Splits a given bounding box according to passed number of desired splits. The result is an array with the shape of 'number_of_splits'.
+"""
+function split_bounding_box( bounding_box::BoundingBox,
+														 number_of_splits::Array{ Int64, 1 } )::Array{ BoundingBox }
+	Δ_length::Vector{ Float64 } = bounding_box.length ./ number_of_splits
+	lower_centroid = bounding_box.centroid - 0.5 .* ( bounding_box.length - Δ_length )
+	splits::Array{ BoundingBox } = Array{ BoundingBox }( undef, Tuple( number_of_splits ) )
+
+	for cart_i in CartesianIndices( splits )
+		pos = [ Float64( cart_i[ i ] ) for i = 1  : length( cart_i ) ] 
+		splits[ cart_i ] = BoundingBox( bounding_box.dimension, lower_centroid .+ ( pos .- 1 ) .* Δ_length, Δ_length )
+	end # for
+
+	return splits
+end # function
+
+
+"""
 	translate_coordinate( x, source_box, target_box )
 
 Translates a coordinate 'x' located inside the source_box and maps it to the target_box.

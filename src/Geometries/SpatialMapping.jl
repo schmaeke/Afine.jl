@@ -5,6 +5,6 @@ struct SpatialMapping
 
 	x::Function
 	ξ::Function
-	J::Function
+	J_ij::Function
 
 end # struct
