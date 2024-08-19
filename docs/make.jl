@@ -11,3 +11,7 @@ makedocs(
 		sidebar_sitename = true
 	)
 )
+
+deploydocs(
+	rep = "github.com/schmaeke/Afine.jl.git",
+)
