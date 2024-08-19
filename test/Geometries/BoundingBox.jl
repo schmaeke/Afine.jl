@@ -4,8 +4,8 @@ using Test
 using Afine.Geometries
 
 # setting up some variables for testing
-const source_box::BoundingBox = BoundingBox( 2, [  0.0,  0.0 ], [ 2.0, 2.0 ] ) 
-const target_box::BoundingBox = BoundingBox( 2, [ -2.0,  1.5 ], [ 2.0, 1.0 ] ) 
+const source_box::BoundingBox = BoundingBox( 2, 0, [  0.0,  0.0 ], [ 2.0, 2.0 ] ) 
+const target_box::BoundingBox = BoundingBox( 2, 0, [ -2.0,  1.5 ], [ 2.0, 1.0 ] ) 
 
 const source_point::Vector{ Float64 } = [ -0.5,  0.0 ]
 const target_point::Vector{ Float64 } = [ -2.5,  1.5 ]
