@@ -7,7 +7,7 @@ export is_inside, lower_bound, non_zero_directions, split_bounding_box, translat
 include( "SpatialMapping.jl" )
 export SpatialMapping
 
-include( "AxisAlignedMapping.jl" )
-export AxisAlignedMapping.BoundingBoxMapping
+# include( "AxisAlignedMapping.jl" )
+# export BoundingBoxMapping
 
 end # module

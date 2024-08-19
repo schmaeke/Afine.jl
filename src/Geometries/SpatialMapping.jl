@@ -1,6 +1,6 @@
 abstract type SpatialMapping end
 
-function J( Q::BoundingBoxMapping, ξ::Vector{ Float64 }, i::Int64, j::Int64 )::Float64
+function J( Q::SpatialMapping, ξ::Vector{ Float64 }, i::Int64, j::Int64 )::Float64
 	error( "Function not implented for given mapping type" )
 end # function
 
