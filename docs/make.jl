@@ -13,5 +13,5 @@ makedocs(
 )
 
 deploydocs(
-	rep = "github.com/schmaeke/Afine.jl.git",
+	repo = "github.com/schmaeke/Afine.jl.git",
 )
