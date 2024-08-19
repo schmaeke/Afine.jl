@@ -1,4 +1,4 @@
-module FerisRunTests
+module AfineRunTests
 
 using Test
 

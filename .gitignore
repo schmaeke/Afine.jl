@@ -1,6 +1,9 @@
 # Manifest file generated from PkgTemplates
 /Manifest.toml
 
+# Currently ignoring the build docs
+docs/build/
+
 # macOS file system files
 .DS_Store
 

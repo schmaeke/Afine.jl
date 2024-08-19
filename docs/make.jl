@@ -1,8 +1,8 @@
 using Documenter
-using Feris.Geometries
+using Afine.Geometries
 
 makedocs(
-	sitename = "Feris.jl",
+	sitename = "Afine.jl",
 	format = Documenter.HTML(
 		# prettyurls only when deploying documentation
 		prettyurls = get( ENV, "CI", nothing ) == "true",

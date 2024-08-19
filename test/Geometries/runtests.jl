@@ -2,7 +2,7 @@ module HyperCubeTests
 
 using Test
 
-@testset "Cells"  begin
+@testset "Geometries"  begin
 
 	include( "BoundingBox.jl" )
 

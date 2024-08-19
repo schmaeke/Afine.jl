@@ -1,7 +1,7 @@
 module BoundingBoxTests
 
 using Test
-using Feris.Geometries
+using Afine.Geometries
 
 # setting up some variables for testing
 const source_box::BoundingBox = BoundingBox( 2, [  0.0,  0.0 ], [ 2.0, 2.0 ] ) 
