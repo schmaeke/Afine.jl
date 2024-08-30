@@ -1,5 +1,3 @@
-# Hello World
+# The documentation of ```Afine.jl```
 
-```@docs
-unit_bounding_box( dimensions::Int64 )
-```
+There is nothing here at the moment. The documentation will be written when the package gets into the alpha stage.
