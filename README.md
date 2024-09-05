@@ -5,7 +5,7 @@
 
 <div align = "center">
 
-[![Build Status](https://github.com/schmaeke/Afine.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/schmaeke/Afine.jl/actions/workflows/CI.yml?query=branch%3Amain) [![](https://img.shields.io/badge/Documentation-dev-orange.svg)](https://afine.dev/dev/)
+[![Build Status](https://github.com/schmaeke/Afine.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/schmaeke/Afine.jl/actions/workflows/CI.yml?query=branch%3Amain) [![](https://img.shields.io/badge/Docs-dev-orange.svg)](https://afine.dev/dev/)
 
 </div>
 
