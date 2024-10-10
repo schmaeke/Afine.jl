@@ -1,8 +1,8 @@
-module HyperCubeTests
+module GeometryTest
 
 using Test
 
-@testset "Geometries"  begin
+@testset "BoundingBox"  begin
 
 	include( "BoundingBox.jl" )
 

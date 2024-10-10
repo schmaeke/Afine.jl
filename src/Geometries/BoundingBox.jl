@@ -77,7 +77,7 @@ function split_bounding_box( bounding_box::BoundingBox,
 	splits::Array{ BoundingBox } = Array{ BoundingBox }( undef, Tuple( number_of_splits ) )
 
 	for cart_i in CartesianIndices( splits )
-		position_offset = [ Float64( cart_i[ i ] ) for i = 1  : length( cart_i ) ] 
+		position_offset = [ Float64( cart_i[ i ] ) for i = 1  : length( cart_i ) ]
 		splits[ cart_i ] = BoundingBox( bounding_box.dimension, bounding_box.codimension, lower_centroid .+ ( position_offset .- 1 ) .* Δ_length, Δ_length )
 	end # for
 

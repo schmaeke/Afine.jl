@@ -1,0 +1,4 @@
+struct Domain
+
+
+end # struct

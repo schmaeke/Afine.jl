@@ -87,5 +87,4 @@ function evaluate( polynomial::Polynomial,
 	end # for
 
 	return y
-
 end # function
