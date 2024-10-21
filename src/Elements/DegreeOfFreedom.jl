@@ -1,11 +1,17 @@
+import Afine.Geometries.HyperCube
+
+
 "Basic struct of a degree of freedom."
 struct DegreeOfFreedom
 
 	"Number of unknowns per degree of freedom."
 	variance::Int64
 
+	"True if the DoF is shared across elements."
+	shared::Bool
+
 	"Goemetry entity this DoF belongs to."
-	# topology::HyperCube
+	topology::HyperCube
 
 end # struct
 
@@ -37,9 +43,7 @@ function constrain_dof!( dof::DegreeOfFreedom,
 												 component_indices::Array{ Int64, 1 } = [ i for i in 1:dof.variance ],
 												 constrain_values::Array{ Float64, 1 } = zeros( dof.variance ) )::DoFConstrain
 
-	if length( component_indices ) != length( constrain_values )
-		error( "Number of provided indices ($( length( component_indices ) )) does not match the number of values ($( length( constrain_values ) ))!" )
-	end # if
+	@assert length( component_indices ) == length( constrain_values )
 
 	size = length( component_indices )
 	constrain = DoFConstrain( size, component_indices, constrain_values )

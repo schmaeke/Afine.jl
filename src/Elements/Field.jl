@@ -1,8 +1,9 @@
 import Afine.Geometries.Domain
 import Afine.Geometries.HyperCube
 
+
 "Definition of a finite element field."
-struct Field
+mutable struct Field
 
 	"Number of components of the field."
 	variance::Int64

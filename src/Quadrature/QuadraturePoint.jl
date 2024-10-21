@@ -1,4 +1,8 @@
-using Afine.Geometries
+import Afine.Geometries.BoundingBox
+import Afine.Geometries.non_zero_directions
+import Afine.Geometries.translate_coordinate
+import Afine.Geometries.unit_bounding_box
+import Afine.Geometries.volume
 
 
 "Quadrature point data type"
@@ -48,12 +52,11 @@ function tensor_product_points_from_1d( Ω::BoundingBox,
 																				w::Array{ Array{ Float64 } } )::Array{ QuadraturePoint }
 	directions = non_zero_directions( Ω )
 
-	if length( directions ) != length( ξ ) || length( directions ) != length( w )
-		error( "There number of provided 1D quadratures does not match the dimension of the domain" )
-	end # if
+	@assert length( directions ) == length( ξ )
+	@assert length( directions ) == length( w )
 
 	for i in eachindex( directions )
-		
+		# TODO: Implement
 	end # for
-	
+
 end # function

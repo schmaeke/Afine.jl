@@ -12,7 +12,7 @@ function legendre_helper( x::Float64,
 	b = x
 	c = 0.0
 
-	# Use the recusrive definition of the Legendre polynomial.
+	# Use the recursive definition of the Legendre polynomial.
 	for j in 2:i
 		c = ( ( 2.0 * j - 1.0 ) * x * b + ( 1.0 - j ) * a ) / j
 		a = b
