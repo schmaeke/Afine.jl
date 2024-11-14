@@ -1,5 +1,4 @@
 using Documenter
-using Afine.Geometries
 
 makedocs(
 	sitename = "Afine.jl",
