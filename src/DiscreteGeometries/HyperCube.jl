@@ -1,18 +1,15 @@
 "Perpsective of one hyper cube on another hyper cube."
 struct Perspective
-
 	"Bounding box of this the hyper cube from this perspective."
 	bounding_box::BoundingBox
 
 	"Polarity of the orientation of the different dimensions from this perspective."
 	orientation_polarity::Array{ Bool, 1 }
-
 end # struct
 
 
 "Definition of a hyper cube."
 struct HyperCube
-
 	"Spatial dimension of the hyper cube."
 	dimension::Int64
 
@@ -33,5 +30,4 @@ struct HyperCube
 
 	"Olverlays of this hyper cube."
 	overlays::Array{ HyperCube }
-
 end # struct

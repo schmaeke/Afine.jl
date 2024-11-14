@@ -1,4 +1,4 @@
-module Geometries
+module DiscreteGeometries
 
 include( "BoundingBox.jl" )
 export BoundingBox
@@ -6,6 +6,9 @@ export is_inside, lower_bound, non_zero_directions, split_bounding_box, translat
 
 include( "HyperCube.jl" )
 export HyperCube
+
+include( "Mesh.jl" )
+export Mesh
 
 include( "Domain.jl" )
 export Domain

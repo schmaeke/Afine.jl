@@ -1,8 +1,8 @@
-import Afine.Geometries.BoundingBox
-import Afine.Geometries.non_zero_directions
-import Afine.Geometries.translate_coordinate
-import Afine.Geometries.unit_bounding_box
-import Afine.Geometries.volume
+import Afine.DiscreteGeometries.BoundingBox
+import Afine.DiscreteGeometries.non_zero_directions
+import Afine.DiscreteGeometries.translate_coordinate
+import Afine.DiscreteGeometries.unit_bounding_box
+import Afine.DiscreteGeometries.volume
 
 
 "Quadrature point data type"

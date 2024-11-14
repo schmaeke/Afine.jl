@@ -1,7 +1,7 @@
 module AxisAlignedMapping
 
 
-	using Geometries
+	using DiscreteGeometries
 
 
 	"""

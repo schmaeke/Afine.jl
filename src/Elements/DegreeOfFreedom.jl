@@ -1,4 +1,4 @@
-import Afine.Geometries.HyperCube
+import Afine.DiscreteGeometries.HyperCube
 
 
 "Basic struct of a degree of freedom."

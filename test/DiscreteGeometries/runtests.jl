@@ -1,4 +1,4 @@
-module GeometryTest
+module DiscreteGeometriesTest
 
 using Test
 

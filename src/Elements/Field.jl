@@ -1,5 +1,5 @@
-import Afine.Geometries.Domain
-import Afine.Geometries.HyperCube
+import Afine.DiscreteGeometries.Domain
+import Afine.DiscreteGeometries.HyperCube
 
 
 "Definition of a finite element field."

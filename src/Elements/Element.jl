@@ -1,5 +1,5 @@
 import Afine.Ansatz.Interpolation
-import Afine.Geometries.HyperCube
+import Afine.DiscreteGeometries.HyperCube
 
 
 struct Element

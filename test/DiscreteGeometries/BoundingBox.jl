@@ -1,11 +1,11 @@
 module BoundingBoxTests
 
 using Test
-using Afine.Geometries
+using Afine.DiscreteGeometries
 
 # setting up some variables for testing
-const source_box::BoundingBox = BoundingBox( 2, 0, [  0.0,  0.0 ], [ 2.0, 2.0 ] ) 
-const target_box::BoundingBox = BoundingBox( 2, 0, [ -2.0,  1.5 ], [ 2.0, 1.0 ] ) 
+const source_box::BoundingBox = BoundingBox( 2, 0, [  0.0,  0.0 ], [ 2.0, 2.0 ], [ 1, 2 ] )
+const target_box::BoundingBox = BoundingBox( 2, 0, [ -2.0,  1.5 ], [ 2.0, 1.0 ], [ 1, 2 ] )
 
 const source_point::Vector{ Float64 } = [ -0.5,  0.0 ]
 const target_point::Vector{ Float64 } = [ -2.5,  1.5 ]
@@ -31,8 +31,8 @@ for i in eachindex( splits )
 end # for
 
 # volume functions tests
-@test volume( source_box ) == 4
-@test volume( target_box ) == 2
+@test volume( source_box ) == 4.0
+@test volume( target_box ) == 2.0
 
 # unit_bounding_box tests
 const unit_box_2d::BoundingBox = unit_bounding_box( 2 )
